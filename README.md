@@ -7,6 +7,7 @@ This project implements a `Calculator` and `CalculatorAdvanced` class in Java, p
 
 
 ## **Features**
+
 **Basic Calculator (Calculator Class)**
 1. Basic Arithmetic Operations
     - Addition (`+`)
@@ -37,6 +38,7 @@ This project implements a `Calculator` and `CalculatorAdvanced` class in Java, p
   
 
 ## **Focus on Testing and Quality Assurance**
+
 **Code Coverage**
   - The project achieves 100% test coverage, ensuring that every line of code is exercised by the test suite, leaving no untested paths in the logic.
     
@@ -53,7 +55,7 @@ This project implements a `Calculator` and `CalculatorAdvanced` class in Java, p
 
 **Sample Test: Factorial Calculation**
 
-```
+```java
 @Test
 void testFactorial() throws Exception {
     CalculatorAdvanced calculator = new CalculatorAdvanced();
@@ -67,7 +69,7 @@ void testFactorial() throws Exception {
 
 **1. Basic Calculator**
 
-```
+```java
 Calculator calculator = new Calculator();
 
 // Perform basic operations
@@ -78,7 +80,7 @@ System.out.println(calculator.getCurrentValue()); // Output: 15.0
 
 **2. Advanced Calculator**
 
-```
+```java
 CalculatorAdvanced calculatorAdvanced = new CalculatorAdvanced();
 
 // Factorial Calculation
@@ -110,14 +112,14 @@ System.out.println(isArmstrong); // Output: true
 
 **1. Clone the Repository**
 
-```
+```bash
 git clone <repository-url>
 cd <repository-folder>
 ```
 
 **2. Compile the Code**
 
-```
+```bash
 javac -d bin src/*.java
 ```
 
@@ -126,6 +128,6 @@ javac -d bin src/*.java
 
 **4. Run Mutation Testing Install PIT (Pitest) and run mutation tests with:**
 
-```
+```bash
 mvn org.pitest:pitest-maven:mutationCoverage
 ```
